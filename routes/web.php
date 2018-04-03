@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about', 'StaticPagesController@about')->name('about');
+Route::get('/contact', 'StaticPagesController@contact')->name('contact');
+Route::get('/help', 'StaticPagesController@help')->name('help');
